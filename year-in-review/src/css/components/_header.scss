@@ -1,0 +1,12 @@
+.header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top:calc(var(--baseline));
+}
+
+.header__logo{
+    max-width:120px;
+}
+

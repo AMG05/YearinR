@@ -1,0 +1,14 @@
+.hero{
+    background-color:var(--off-black);
+    background-image: url(/static/img/hero-background.svg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:100vh;
+    width:100%;
+    margin-bottom:calc(var(--baseline)*2);
+    @media(min-width: map-get($mq-breakpoints,  sm)) {
+        background-size: cover;
+    }
+}

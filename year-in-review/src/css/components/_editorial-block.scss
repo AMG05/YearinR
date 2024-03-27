@@ -1,0 +1,14 @@
+.editorial-block{
+    @include v-space;
+    @include col;
+    @include column(12);
+    @media(min-width: map-get($mq-breakpoints,  md)){
+        padding-left: column-calc(4,0px);
+    }
+}
+
+.editorial-block--intro{
+    @media(min-width: map-get($mq-breakpoints,  md)){
+        padding-left: 0;
+    }
+}

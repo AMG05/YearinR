@@ -1,0 +1,65 @@
+.blockquote{
+    @include v-space;
+    @include col;
+    @include column(12);
+    font-weight:var(--light-weight);
+}
+.blockquote--indent{
+    @media(min-width: map-get($mq-breakpoints,  md)){
+        padding-left: column-calc(4,0px);
+    }
+}
+
+.blockquote__quote{
+    @include plus-4;
+    margin-bottom:calc(var(--baseline)*2);
+    padding-top:calc(var(--baseline)*3);
+    position:relative;
+    @media(min-width: map-get($mq-breakpoints,  md)){
+        @include plus-6;
+        padding-top:0;
+    }
+    &:before {
+        content: "";
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(/static/img/quote.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media(min-width: map-get($mq-breakpoints,  md)){
+            left: -80px;
+            top: 5px;
+        }
+    }
+}
+
+.blockquote__footer{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.blockquote__meta{
+    display:block;
+}
+
+.blockquote__author,.blockquote__author-title{
+    @include plus-1;
+    line-height:1;
+    display:block;
+}
+
+.blockquote__author-title{
+    color:var(--dark-grey-1);
+}
+
+.blockquote__image{
+    border-radius: 100px;
+    width:80px;
+    height:80px;
+    margin-right:calc(var(--baseline)/2);
+}

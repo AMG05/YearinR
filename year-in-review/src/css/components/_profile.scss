@@ -1,0 +1,19 @@
+.profile{
+    margin-bottom: calc(var(--baseline)*3);
+}
+
+.profile__image{
+    border-radius: 1000px;
+    transform: scale(1);
+    transition: transform 1s ease;
+}
+
+.profile__name,
+.profile__title{
+    @include plus-2;
+    font-weight:var(--light-weight);
+}
+
+.profile__title{
+    color:var(--dark-grey-1);
+}

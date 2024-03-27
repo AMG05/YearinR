@@ -1,0 +1,13 @@
+.bg-dark{
+    background-color:var(--off-black);
+    color:white;
+    padding-top:calc(var(--baseline)*3);
+    width:100%;
+    @media(min-width: map-get($mq-breakpoints,  md)) {
+        padding-top:var(--v-space);
+    }
+    .section-intro,
+    .stat {
+        border-top: 1px solid white;
+    }
+}

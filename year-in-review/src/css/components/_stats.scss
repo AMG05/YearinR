@@ -1,0 +1,50 @@
+.stat{
+    border-top:1px solid var(--off-black);
+    margin-bottom:calc(var(--baseline)*2);
+    padding-top:calc(var(--baseline)/4);
+}
+
+.stat__title{
+    @include plus-1;
+    margin-bottom:calc(var(--baseline)/2);
+}
+
+.stat__figure{
+    display:flex;
+    @include plus-9;
+    font-weight: var(--light-weight);
+    @media(min-width: map-get($mq-breakpoints,  md)){
+        font-size: 11vw;
+        letter-spacing:-5px;
+    }
+}
+
+.stat__suffix{
+    @include plus-4;
+    align-self: flex-start;
+    padding-top:calc(var(--baseline)/2);
+    @media(min-width: map-get($mq-breakpoints,  md)){
+        font-size: 4vw;
+    }
+}
+
+.stat__summary{
+    @include plus-1;
+}
+
+.stat--hero{
+    @media(min-width: map-get($mq-breakpoints,  md)){
+        margin-bottom:calc(var(--baseline)*3);
+    }
+    .stat__figure{
+        @media(min-width: map-get($mq-breakpoints,  md)){
+            font-size: 28vw;
+            line-height:0.8;
+        }
+    }
+    .stat__summary{
+        @media(min-width: map-get($mq-breakpoints,  md)){
+            @include plus-2;
+        }
+    }
+}

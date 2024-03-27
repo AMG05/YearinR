@@ -1,0 +1,8 @@
+.image-block{
+
+}
+
+.image-block__caption{
+    @include plus-1;
+    margin-top:calc(var(--baseline)/4);
+}
